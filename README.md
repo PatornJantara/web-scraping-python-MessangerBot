@@ -12,7 +12,7 @@
 > pip install beautifulsoup4<br />
 <br />
 
-**Searching source code**
+**Searching source code example**
 <br /> right click inspection on target object
 <br />
 
