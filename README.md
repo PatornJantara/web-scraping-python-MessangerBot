@@ -4,11 +4,11 @@
 </br>
 - Selenium
 - BeautifulSoup
-<br />
+</br>
 **Installation (Windows)**
-<br />
+</br>
 open cmd
-<br /> 
+</br> 
 > pip install selenium
 > pip install beautifulsoup4
   
