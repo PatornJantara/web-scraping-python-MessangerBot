@@ -1,12 +1,12 @@
 # web-scrapping-python-MessagerBot
 ## web scrapping using python
 **Requirements**
-</br>
+<br />
 - Selenium
 - BeautifulSoup
-</br>**Installation (Windows)**</br>
-open cmd</br> 
-> pip install selenium
+<br />**Installation (Windows)**<br />
+open cmd<br /> 
+> pip install selenium<br /> 
 > pip install beautifulsoup4
   
   
