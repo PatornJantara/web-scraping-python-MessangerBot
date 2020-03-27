@@ -27,8 +27,13 @@
 
 ![2](https://user-images.githubusercontent.com/56642026/77731578-c0e48200-7035-11ea-9419-c5e8307214bf.png)
 
+<br />
 
+**suggestion**
 
+<br />
+
+For some reason, I have to put delay (time.sleep()) in this code to make it working properly. I am still confused why?, I suggest clause may be required time of chromedriver for data communication. It usually happenes when dealing with API.  
   
   
   
