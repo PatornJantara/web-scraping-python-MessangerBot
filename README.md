@@ -3,9 +3,10 @@
 **Requirements**
 <br />
 - Selenium
-- BeautifulSoup<br />
-**Installation (Windows)**<br />
-open cmd<br /> 
+- BeautifulSoup
+<br /><br />
+**Installation (Windows)**
+<br /> open cmd
 > pip install selenium<br /> 
 > pip install beautifulsoup4
   
