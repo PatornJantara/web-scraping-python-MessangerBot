@@ -1,4 +1,4 @@
-# web-scrapping-python-MessagerBot
+# Web scrapping Python (botMessager)
 ## web scrapping using python
 **Requirements**
 <br />
