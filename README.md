@@ -1,4 +1,4 @@
-# Web scrapping Python (botMessager)
+# Web scrapping Python (botMessanger)
 ## web scrapping using python
 **Requirements**
 <br />
