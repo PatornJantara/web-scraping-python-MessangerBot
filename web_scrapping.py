@@ -14,21 +14,23 @@ def dataCovid():
     # Find all which in specific word
     head = soup.find_all('div',{'class':'block-title-page'}) 
     content = soup.find_all('div',{'class':'block-st-all'})
+    print(head)
+    print(content)
     message = []
     # soup_find_all will return data in list term
     for sub_head in head:
         message.append(sub_head.text.replace('\n',''))
     for sub_content in content:
         message.append(sub_content.text.replace('\n',''))
-
+    print(message)
     return message
 
-def botMessager(message):
+def botMessanger(message):
     global driver
     facebook_url = 'https://web.facebook.com/'  
     driver.get(facebook_url) 
-    bot_user = 'xxx-xxx-xxx'   # Your bot username
-    bot_password = 'xxx-xxx-xxx'         # Your bot password
+    bot_user = 'xxxxxxxxxxxx@xmail.com'   # Your bot username
+    bot_password = 'xxxxxxxxxxxxxxx'         # Your bot password
 
     # Find element by XPATH (recommendation)
     user = driver.find_element(By.XPATH,'//*[@id="email"]')
@@ -39,12 +41,12 @@ def botMessager(message):
     password.send_keys(bot_password)
     login.click()   # click
     time.sleep(2)
-    my_messager_url = 'xxx-xxx-xxx' # from chatbot side
-    driver.get(my_messager_url)
+    my_messanger_url = 'https://web.facebook.com/messages/t/xxxxxxxxxxxxx'
+    driver.get(my_messanger_url)
     for sub_message in message :
-        messager = driver.find_element(By.XPATH,'//*[@id="js_f"]/div/div/div')
-        messager.send_keys(sub_message)
-        messager.send_keys(Keys.ENTER)  # Enter
+        messanger = driver.find_element(By.XPATH,'//*[@id="js_f"]/div/div/div')
+        messanger.send_keys(sub_message)
+        messanger.send_keys(Keys.ENTER)  # Enter
         time.sleep(2)
     driver.quit()
 
@@ -54,9 +56,9 @@ options.add_argument('--ignore-certificate-errors') # ignore any error sending b
 options.add_argument('--incognito')     # Incognito mode (un-identify user)
 options.add_argument('--headless')      # Dont open up browser
 
-# run chrome-driver 
+# run chrome-driver
 driver = webdriver.Chrome(r'C:\Users\User\Downloads\chromedriver.exe', chrome_options=options)
 
 message = dataCovid()
-botMessager(message)
+botMessanger(message)
 
